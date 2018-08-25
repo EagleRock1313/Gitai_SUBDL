@@ -1,6 +1,6 @@
 #! /bin/bash
 
-############### Houskeeping and pre-processing #####################################      
+############### Houskeeping and pre-processing ###################################      
 
 ######  testing codeblock, clean up last run #####
     rm -rf ./metadata 
@@ -28,11 +28,6 @@
     echo -ne "\\n Exclude Script file from processing: "$EXCL "\\n\\n"         
     printf "\\n Metadata directory is $META \\n\\n"                                                  
     shopt -s extglob
-#exclude directory and other files file from processing
-    EXCLLOG="*.log" 
-    EXCLSH="*.sh"
-    #EXCLDIR=^/(?!metadata|error|BetaMeta)([a-z0-9]+)$ 
-    echo -ne "\\n Exclude from processing: "$EXCLLOG "\\n\\n"    
 
 ####################################################################################
 #Declare fnFindDup()
