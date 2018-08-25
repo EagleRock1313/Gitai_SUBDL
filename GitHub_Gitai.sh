@@ -36,8 +36,8 @@
 fnFindDup() {
     path=$1
     : ${path:=.}
-    fullList=$(find `pwd` $path  ! -iname "$EXCLLOG" | grep -v '^\.' | awk -F '/' '{print $NF,$0}' | sort +0 -1)
-    fileNames=$(find `pwd` $path ! -iname "$EXCLLOG" | grep -v '^\.' | awk -F '/' '{print $NF}' | sort | uniq -d)
+    fullList=$(find `pwd` $path   | grep -v '^\.' | awk -F '/' '{print $NF,$0}' | sort +0 -1)
+    fileNames=$(find `pwd` $path  | grep -v '^\.' | awk -F '/' '{print $NF}' | sort | uniq -d)
     }
 ####################################################################################
 #Declare fnListDup()
