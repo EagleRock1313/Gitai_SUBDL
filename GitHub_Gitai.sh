@@ -187,8 +187,7 @@ fnMetadata() {
     fnFindNonDup
     fnListNonDup
     fnCreateNonDupArray
-    #testing code
-        
+
     #set iteration variables   
     end="${#array2[*]}"
     next=0                                      
