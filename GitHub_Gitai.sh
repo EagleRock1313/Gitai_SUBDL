@@ -144,13 +144,7 @@ fnFindNonDup() {
 #Declare fnListNonDup()
 fnListNonDup() {
     echo -ne "\\n\\t*** List and count of NON-DUPLICATE files & path*** \\n"
-   
-    #testing code
-    #for EACH in $fileNames2; do
-        #echo "$fullList2" | grep -wE "^$EACH " > /dev/null
-      	#echo "$fullList2" | grep -wE "^$EACH " | wc -l   > /dev/null      #wc -l count for processing 
-    #done
-   
+     
     #create .log for array processing and count log
     for EACH in $fileNames2; do
        echo "$fullList2" | grep -wE "^$EACH " >> "$META/_NonDupArray2.log"
